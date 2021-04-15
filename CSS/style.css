@@ -1,3 +1,25 @@
-p{
+#Paragrafo-1{
     color: purple;
+
+    /* 
+    background-image: url(../CSS/image/fundo.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;/*background rola junto com a pagina 
+    */
+    /*
+    background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    ordem a ser seguida
+    */
+    background: url(../CSS/image/fundo.jpg) center/cover no-repeat fixed;
 }
+
+#titulo{
+    color: blue;
+}
+
+.texto-verde{
+    color:red
+}
+
