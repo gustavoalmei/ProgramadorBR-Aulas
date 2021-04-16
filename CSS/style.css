@@ -23,3 +23,45 @@
     color:red
 }
 
+#paragrafos{
+    background-image: url(https://source.unsplash.com/random);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cm{
+    background-color: red;
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm{
+    background-color: blue;
+    width: 1mm;
+    height: 1mm;
+}
+
+#in{
+    background-color: red;
+    width: 1in;
+    height: 1in;
+}
+
+#px{
+    background-color: blue;
+    width: 1px;
+    height: 1px;
+}
+
+#pt{
+    background-color: red;
+    width: 1px;
+    height: 1px;
+}
+
+#pc{
+    background-color: blue;
+    width: 1pc;
+    height: 1pc;
+}
