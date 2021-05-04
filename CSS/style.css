@@ -65,3 +65,51 @@
     width: 1pc;
     height: 1pc;
 }
+html{
+    font-size:16px;
+    /*
+    font-size: 16px; default
+    */
+}
+
+#container-inside{
+    font-size: 25px;
+    height: 100px;
+    width: 250px;
+    background-color: blue;
+}
+
+#inside{
+    /*
+    font-size: 2em; relativo ao tamanho da font daquele elemento
+    font-size: 2rem; relativo ao tamanho da font do elemento raiz, nesse caso html
+    
+
+    -- é mais apropriado para se obter ajustes em diferentes tipos de mídia --
+    height: 100vh; largura da viewport  
+    width: 200vw; altura da viewport
+    width: 200vmin; referente a menor dimenção 
+    width: 200vmax;referente a maior dimenção 
+
+    */
+    font-size: 3rem;
+    height: 50%;
+    width: 50%;
+    background-color: red;
+}
+
+#base{
+    height: 10px;
+    background-color:red
+}
+
+#container-conteudo{
+    background-color:blue;
+    color:white;
+    margin:10px;
+    padding: 10px;
+}
+
+#border{
+    border: 1px dashed gray;
+}
