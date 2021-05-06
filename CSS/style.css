@@ -137,3 +137,60 @@ html{
     background-color:purple;
     border: 10px solid gray;
 }
+
+.textos{
+    color: blue;
+    text-align: justify;
+    /* text-transform: capitalize; uppercase, lowercase, capitalize */
+    line-height: 1;
+    /* text-shadow: 20px 10px 2px black dislocamento pra direita, pra baixo, e cor*/
+    font-family: Times;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal; /* variaves da fonte*/
+}
+ /* usando fonte customizada
+@font-face {
+    font-family: ;nome da fonte
+    src: url(); url da fonte
+}
+*/
+
+.cadastrar {
+    text-decoration: none;
+    cursor: normal;
+    color:black;
+    background-color:white;
+    padding:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.cadastrar:active{
+    color: blue;
+}
+
+#listas ul {
+    list-style-type: circle;
+    background-color: rgb(235, 147, 208);
+    padding:10px;
+
+}
+
+#listas ol {
+    list-style-type: lower-alpha;
+    padding:10px;
+    background-color: rgb(40, 101, 214);
+}
+
+#listas li{
+    list-style-image:url(../CSS/image/icon.png);
+    list-style-position: inside;
+    border: 5px solid black;
+    margin:5px;
+    padding:5px;
+    background-color: yellow;
+    text-transform: uppercase;
+}
