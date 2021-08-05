@@ -1,11 +1,10 @@
 body{
     margin: 0px;
     padding:0px;
+    
 }
 
-#Paragrafo-1{
-    color: purple;
-
+.Paragrafo-1{
     /* 
     background-image: url(../CSS/image/fundo.jpg);
     background-repeat:no-repeat;
@@ -17,7 +16,10 @@ body{
     background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
     ordem a ser seguida
     */
+    color: rgb(0, 253, 0);
     background: url(../CSS/image/fundo.jpg) center/cover no-repeat fixed;
+    font-family: 'Encode Sans SC', sans-serif;
+
 }
 
 #titulo{
@@ -126,7 +128,9 @@ html{
     height: 100px;
     background-color:purple;
     border: 10px solid gray;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* box-sizing: border-box deixar no tamanho definido por width/height
+    box-sizing: content-box soma o valor definido de width/height + margin/padding/border */
 }
 
 .box2{
@@ -139,15 +143,16 @@ html{
 }
 
 .textos{
-    color: blue;
+    color: rgb(0, 0, 148);
     text-align: justify;
     /* text-transform: capitalize; uppercase, lowercase, capitalize */
     line-height: 1;
     /* text-shadow: 20px 10px 2px black dislocamento pra direita, pra baixo, e cor*/
-    font-family: Times;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-variant: normal; /* variaves da fonte*/
+    /* text-indent: 50px; identação do paragrafo (espaçamento) */
 }
  /* usando fonte customizada
 @font-face {
@@ -164,12 +169,13 @@ html{
     padding:10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-.cadastrar:active{
-    color: blue;
+.cadastrar:link{
+    background-color: black;
+    color: red;
 }
 
 #listas ul {
@@ -180,17 +186,24 @@ html{
 }
 
 #listas ol {
-    list-style-type: lower-alpha;
+    list-style-type: circle;
     padding:10px;
     background-color: rgb(40, 101, 214);
+    text-decoration: dashed;
 }
 
 #listas li{
     list-style-image:url(../CSS/image/icon.png);
-    list-style-position: inside;
+    list-style-position: inside; /* posiciona o icone dentro ou fora da lista*/
     border: 5px solid black;
     margin:5px;
     padding:5px;
     background-color: yellow;
     text-transform: uppercase;
+}
+
+#listas a {
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: lowercase;
 }

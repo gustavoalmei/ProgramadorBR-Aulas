@@ -1,0 +1,65 @@
+/*
+Display: block ocupa a linha toda ( o proximo bloco fica abaixo), pelo fato se der um bloco, pode ser alterada a altura e largura
+Display: inline vai manter na mesma linha, não é modificavel a largura e altura
+Display: inline-block, tem as configurações do inline, porém, pode ser feito a alteração da largura/altura
+*/
+
+#container{
+    color: black;
+    background-color: rgb(0, 255, 13);
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+    /* overflow-y: scroll; selecionar o overflow da direção Y*/
+    /* overflow-x: scroll; selecionar o overflow da direção X*/
+}
+
+#quadrado{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: auto;
+    /* margin-left: auto; / margin-right: auto; */
+}
+
+img #container-al{
+    display: inline-block; /* para alinhar a img, ela precisa estar em block, para usar em inline-block, ao invés de selecionar o imagem, deve ser selecionado o container*/
+}
+
+#container-al{
+    text-align: right;
+}
+
+.quadro{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.quadrado {
+    height: 100px;
+    width: 100px;
+}
+
+.quadrado-red{
+    background-color: red;
+}
+
+.quadrado-blue{
+    /* position: relative; o espaço onde estava permaneçe */
+    position: absolute; /*o espaço onde estava, acaba sendo tomado por outro, sa posição dele, será em relação ao pai/avô/ outro que não seja position padrão (static)*/
+    /* position: fixed; tem as mesmas funções do absolute, POREM, acaba ficando fixo na viewport(tela) */
+    /* position: stick; ele fica em uma determinada posição, até que, seja . O deslocamento não afeta a posição de nenhum outro elemento.*/
+    /* no absolute, é referente ao tamanho e o posicionamento do pai, o tipo de posição do pai vai importante também */
+    /* pra qualqer outro tipo de posicionamento, fixo, relativo, o tipo de posicionamento do pai, não importa*/
+    
+    
+    right: 0px;
+    bottom: 0px;
+    background-color: blue;
+}
+
+.quadrado-green{
+    background-color: green;
+}
