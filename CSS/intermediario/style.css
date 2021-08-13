@@ -63,3 +63,52 @@ img #container-al{
 .quadrado-green{
     background-color: green;
 }
+
+#float{
+    border: 1px solid black;
+    overflow: auto; /* ira fazer o pegar todos os dados dentro da div */
+    background-color: #a5c5f5;
+}
+
+#float img{
+    float: right;
+}
+
+#float p{
+    clear: left; /* ira "bloquear" o uso do float na posição indicada, seja right, left ou both(os dois lados)*/
+    padding: 20px;
+    margin: 20px;
+}
+
+#card{
+    float: left;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.c1{
+    color: white;
+    background-color: red;
+    line-height: 200px;/*para centralizar o texto com line-height, deve se saber a altura e largura do pai*/
+}
+
+.c2{
+    color: white;
+    background-color: green;
+    position: absolute; /*vai fazer o texto ficar no centro*/
+    top:50%; /*valor referentao ao pai*/
+    left: 50%;
+    transform: translate(-50%, -50%); /*fara o ajuste na altura x e y*. o falor negativo faz o elemento ir pra cima, o valor positivo fara ir pra baixo. o valor é referente ao conteudo*/
+}
+
+#card2{
+    display: inline-block;
+    border: 1px solid black;
+    padding-left: 150px;/*ele ira somar o padding dos lados, mais o tamanho do conteúdo*/
+    padding-right: 150px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
