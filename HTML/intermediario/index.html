@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo HTML Intermediário</title>
+</head>
+<body>
+
+    <!-- Formulário-->
+    <form method="GET" action="https://www.youtube.com/results"><!-- método de envio(method): GET ou POST/ Action endereço para onde será enviado os dados(se estiver no mesmo domínio, colocar apenas o final do diretório, caso não for do mesmo domínio, informar o endereço completo. ex: http://meusite.com) -->
+        Exemplo de Pesquisa no Youtube:
+        <input type="text" name="search_query"> <!-- o atributo name, serve para identificar o input-->
+        <input type="submit">
+    </form>
+
+    <!-- tipos de input-->
+
+    <form method="GET" action="">
+    Nome:<input type="text" name="nome-user"><br>
+    Email:<input type="email" name="email-user"><br>
+    Senha:<input type="password" name="password"><br>
+    <input type="checkbox" name="curso" value="opcao-1">React JS<br><!-- neste caso, o atributo value, irá diferenciar os dois input's-->
+    <input type="checkbox" name="curso" value="opcao-2">PHP<br>
+    <input type="radio" name="genero" value="masculino" checked> Masculino <br> <!-- checked fara com que a opção já esteja marcada-->
+    <input type="radio" name="genero" value="feminino">Feminino <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+
+    <!-- Tag's para formulário-->
+    <form method="GET" action="" >
+        <select name="estado" multiple>
+            <!-- 
+            size="valor" irá mostrar quantos valores deverá ser mostrado.
+            multiple irá permitir o usúario selecionar mais de uma opção.
+            -->
+            <option value="selection" selected>Selecione uma Cidade</option>
+            <!-- 
+            Selected deixará a opção como selecionada automaticamente, igual checked.
+            -->
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="AM">Amazonas</option>
+            <option value="AC">Acre</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+        </select><br>
+        <input type="submit">
+    </form>
+
+    <!-- Formulário de contato-->
+    <form method="GET" action="">
+        <textarea name="mensagem" cols="30" rows="5" placeholder="Digite sua mensagem..."></textarea>
+        <!-- Lembrar sempre de informar o nome da tag, pois sem ela, não será possivel enviar os dados.-->
+        <input type="submit">
+    </form>
+
+    <!-- novos tipos de input HTML5-->
+    <form method="GET" action="">
+        <input type="color" name="color"><br>
+        <input type="range" value="2" min="0" max="20"><br>
+        <input type="email" placeholder="Digite seu e-mail" name="email"><br>
+        <input type="datetime" name="data" min="2019-01-01" max="2022-12-31"><br>
+        <input type="datetime-local" name="data-hora" value="2019-01-01T05:00"><br>
+        <input type="file" name="arquivo"><br>
+        <input type="number" name="numero" min="0" max="10" value="5"><br>
+        <input type="submit"><br>
+    </form>
+
+    <!-- Tag's Semânticas-->
+    <header></header><!-- Cabeçalho-->
+    <nav></nav><!-- menu de nevagação-->
+    <main></main><!-- área princial do site-->
+    <footer></footer> <!-- rodapé da página-->
+    <section></section><!-- será a seção do site, para melhor organização-->
+    <article></article><!-- será o artigo do site-->
+    
+</body>
+</html>
