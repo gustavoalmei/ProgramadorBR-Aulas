@@ -114,3 +114,51 @@ string / caracter
 
 // console.log("Maior que vinte?", maior20)
 // console.log("Menor que vinte?", menor20)
+
+// String
+// var numero = "9" * 2  ele irá calcular pq o valor é de um número, caso tenho uma letra, ele não iria calcular
+// var str = "uma frase qualquer " caso tente calular com algum número, não será possível pois não tem nenhum número definido
+
+// console.log(numero)
+
+//Transformando Strings em Números
+
+// var a = "3.2";
+// var b = "9";
+// var c = parseFloat(a) + parseInt(b);
+// console.log(c)
+
+// parseFloat transforma uma string em um valor com vírgula
+// parseInt transforma uma string em um valor inteiro
+
+//Alert e Prompt
+
+// var nome = prompt("Fala meu consagrado, qual o teu nome?")
+
+// if(nome == ""){
+//     var nome = prompt("Por favor, digite o seu nome.")
+//     if(nome == ""){
+//         alert("Olá Desconhecido!")
+//     }else{
+//         alert(`Olá ${nome}!`)
+//     }
+// }else{
+//     alert(`Olá ${nome}!`)
+// }
+
+// var numero = parseInt(prompt("Digite um número:"))
+// var dobro = numero + numero;
+
+// alert(`O dobro de ${numero} é ${dobro}.`)
+
+// Condicionais - IF
+
+// var idade = 10;
+
+// if(idade <= 18 || idade >= 70){
+//     console.log("Pode.");
+//     console.log("Qual o seu pedido?")
+// }else{
+//     console.log("Não pode.");
+//     console.log("Volte futuramente.")
+// }
