@@ -217,9 +217,95 @@ string / caracter
 //     numero++
 // }
 
-var number = parseInt(Math.random() * 100);
+// var number = Math.random() * 100;
 
-while(number < 50){
-    number = parseInt(Math.random() * 100);
-    console.log(number)
-}
+// while(number < 50){
+//     number = Math.random() * 100;
+//     console.log(number)
+// }
+
+// Arrays ou vetores/array em outras linguagens 
+
+// criando array
+// var alunos = ["Gustavo", "Igor", "João", "Ana", "Beatriz", "Diovana"] // modo mais comum de se criar array
+// var alunos_1 = new Array("Carlos", "Diego", "Bianca", "Barbara")
+// console.log(alunos_1)
+// console.log(alunos.length) // descobrindo a largura do array
+// console.log(alunos[0]) // localizando o valor dentro do array pelo index(posição)
+// for(var i in alunos){// irá passar a posição do index dos valores dentro do array para a variável i
+//     console.log(i)
+// }
+    
+// for(var aluno of alunos){// irá passar o valor do index dentro do array para a variável aluno
+//     console.log(aluno)
+// }
+// for(var i = 0; i < alunos.length; i++){ ira informar o nome do aluno atráves do index passado
+//     console.log(alunos[i])
+// }
+
+// sem usar array
+// var aluno1 = "Gustavo"
+// var aluno2 = "Diogo"
+// var aluno3 = "Felipe"
+// var aluno4 = "Pedro"
+// console.log(aluno1)
+// console.log(aluno2)
+// console.log(aluno3)
+// console.log(aluno4)
+
+// Funções
+
+// function calc(number_1, number_2){
+// var value1 = number_1
+// var value2 = number_2
+// var media = (value1 + value2) / 2
+    
+//     return media
+// }
+// calculo1 = calc(10,56)
+// calculo2 = calc(52,72)
+
+// console.log(calculo1)
+// console.log(calculo2)
+
+// function saudacao(){
+//     return "Olá mundo!"
+// }
+
+// var s = saudacao // nesse caso, a função saudacao, será passado para o var s, podendo ser executada também
+// console.log(s) 
+// console.log(s())
+
+// var s = function (){
+//     return "Saudações!"
+// }
+
+// console.log(s())
+
+// Juntando tudo até aqui
+
+// var aluno = ["Gustavo", "Igor", "Daiane"];
+// var notaA = [6.5, 10, 7.5];
+// var notaB = [8.0, 8.5, 4.0];
+
+// function media(nota1, nota2){
+//     return (nota1 + nota2) / 2
+// }
+
+// function passou(media){
+//     if(media < 6){
+//         return "Reprovado"
+//     }
+//     else{
+//         return "Aprovado"
+//     }
+// }
+
+// for(var index in aluno){
+//     var nota1 = notaA[index];
+//     var nota2 = notaB[index];
+//     var m = media(nota1, nota2)
+//     var resultado = passou(m)
+
+//     console.log(`${aluno[index]} - ${nota1} - ${nota2} - ${m} - ${resultado}`)
+// }
