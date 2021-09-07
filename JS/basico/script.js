@@ -162,3 +162,64 @@ string / caracter
 //     console.log("Não pode.");
 //     console.log("Volte futuramente.")
 // }
+
+// Operador Ternário
+// var idade = 15
+
+// var pode = idade >= 18 ? true : false; 
+
+// console.log(pode)
+
+// Condicionais - Switch
+// var nota_1 = 8.0;
+// var nota_2 = 6.0;
+
+// var media = (nota_1+nota_2) / 2
+
+// var conceito = ""
+// console.log(media)
+
+// if(media <= 6){
+//     conceito = "Nota baixa"
+// }
+// else if(media <= 8){
+//     conceito = "Nota regular"
+// }
+// else{
+//     conceito = "Ótima nota"
+// }
+// // conceito = "marromenos"
+
+// switch(conceito){
+//     case "Ótima nota":
+//         console.log("Parabéns, continue assim!")
+//     break
+//     case "Nota regular":
+//         console.log("Pode melhorar!")
+//     break
+//     case "Nota baixa":
+//         console.log("Estude mais um pouco!")
+//     break
+//     default: mensagem padrão, aparecerá quando os valores acima não forem encontrados
+//         console.log("Houve um erro.")
+//     break
+// }
+
+// Repetição - FOR e WHILE
+// var numero = 5;
+
+// for(var i = 0; i <= numero; i++){
+//     console.log(i + " Executado")
+// }
+
+// while (numero <= 15){ usada para quando não se sabe quantas vezes sera usada.
+//     console.log(numero)
+//     numero++
+// }
+
+var number = parseInt(Math.random() * 100);
+
+while(number < 50){
+    number = parseInt(Math.random() * 100);
+    console.log(number)
+}
