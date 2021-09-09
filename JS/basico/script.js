@@ -232,6 +232,7 @@ string / caracter
 // console.log(alunos_1)
 // console.log(alunos.length) // descobrindo a largura do array
 // console.log(alunos[0]) // localizando o valor dentro do array pelo index(posição)
+
 // for(var i in alunos){// irá passar a posição do index dos valores dentro do array para a variável i
 //     console.log(i)
 // }
@@ -239,6 +240,7 @@ string / caracter
 // for(var aluno of alunos){// irá passar o valor do index dentro do array para a variável aluno
 //     console.log(aluno)
 // }
+
 // for(var i = 0; i < alunos.length; i++){ ira informar o nome do aluno atráves do index passado
 //     console.log(alunos[i])
 // }
@@ -308,4 +310,90 @@ string / caracter
 //     var resultado = passou(m)
 
 //     console.log(`${aluno[index]} - ${nota1} - ${nota2} - ${m} - ${resultado}`)
+// }
+
+// Objetos - Propriedades
+// propriedade = chave:valor, como se fosse uma variavel
+
+// var modelos = new Object()
+// var modelo = {
+//     Marca: 991,
+//     Modelo: "Porsche",
+//     Ano: 2021
+// }
+
+// var outrosModelos = {
+//     Marca: 991,
+//     Modelo: "Porsche",
+//     Anos: [2016, 2017, 2018, 2019, 2020, 2021]
+// }
+// var situacao = "Situação"
+// modelo[situacao] = "Novo"
+// // modelo["Situação"] = "Novo"
+// // modelo.Situação = "Novo"
+
+// console.log(outrosModelos["Ano"])
+// console.log(outrosModelos)
+// console.log(modelo)
+
+// Objetos - Métodos
+// função atribuida a uma chave
+
+// var calcMedia = function(){
+//     return (this.Notas[0] + this.Notas[1]) / 2 // this muda conforme o contexto, nesse caso o objeto apontado é aluno.notas
+// }
+
+// var aluno = {
+//     Nome: "Gustavo",
+//     Notas:[10, 5],
+//     media: calcMedia
+// }
+// var aluno1 = {
+//     Nome: "Joao",
+//     Notas:[5, 8],
+//     media: calcMedia
+// }
+
+// console.log(aluno.Nome)
+// console.log(aluno.media())
+// console.log(aluno1.Nome)
+// console.log(aluno1.media())
+
+// Objetos - Construtores
+
+// function Aluno(nome, n1, n2){
+    
+//     this.nome = nome;
+//     this.nota1 = n1;
+//     this.nota2 = n2;
+
+//     this.media = function(){
+//     return (this.nota1 + this.nota2) / 2
+//     }
+// }
+
+// var a = new Aluno("Gustavo", 6, 7)
+// console.log(a)
+// console.log(a.media())
+
+// function criarAluno(nome, n1, n2){
+//     return{
+//         nome: nome,
+//         nota1: n1,
+//         nota2: n2,
+//         media: function(){
+//             return (this.nota1 + this.nota2) / 2
+//         }
+//     }
+// }
+
+// var turma = [
+//     criarAluno("Gustavo", 6, 7),
+//     criarAluno("Joao", 9, 7)
+// ]
+
+// var aluno = turma[0]
+
+// for(var aluno of turma){
+//     console.log(`${aluno.nome} - ${aluno.media()}`)
 // }
