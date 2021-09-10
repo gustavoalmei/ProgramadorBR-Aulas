@@ -337,7 +337,7 @@ string / caracter
 // console.log(modelo)
 
 // Objetos - Métodos
-// função atribuida a uma chave
+// função atribuida em um objeto
 
 // var calcMedia = function(){
 //     return (this.Notas[0] + this.Notas[1]) / 2 // this muda conforme o contexto, nesse caso o objeto apontado é aluno.notas
@@ -362,8 +362,8 @@ string / caracter
 // Objetos - Construtores
 
 // function Aluno(nome, n1, n2){
-    
-//     this.nome = nome;
+
+//     this.nome = nome;    // objeto criado atráves de uma função, por isso usado o this
 //     this.nota1 = n1;
 //     this.nota2 = n2;
 
@@ -392,8 +392,40 @@ string / caracter
 //     criarAluno("Joao", 9, 7)
 // ]
 
-// var aluno = turma[0]
+// // var aluno = turma[0]
+
+// turma.forEach(function(elemento){
+//     console.log(elemento) // uma maneira mais avançada do for.in
+// })
 
 // for(var aluno of turma){
 //     console.log(`${aluno.nome} - ${aluno.media()}`)
+// } 
+
+// Objetos - Resumo
+// function obj(name, age){ // função que cria um obj usando new
+//     this.nome = name
+//     this.idade = age   
 // }
+// var a = new obj("Gustavo", 21)
+
+// function obj(n, i){ // funcao que cria obj simples
+//     return{
+//         nome: n,
+//         idade: i
+//     }
+// }
+// var a = obj("Gustavo", 21)
+// console.log(a)
+
+// Datas
+// var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+// var d = new Date()
+// var d = new Date("05/12/2020")
+// var d = new Date("05-12-2020")
+// var d = new Date("05/12/2020")
+// d.setDate(21) // alterar o dia / pode alterar as outras coisas como hora, dia, mes, etc
+// console.log(d.getHours()) // retorna a data / pode retornar as outras coisas como hora, dia, mes, etc
+// var mes = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+// console.log(mes[d.getDay()])
+// console.log(d)
