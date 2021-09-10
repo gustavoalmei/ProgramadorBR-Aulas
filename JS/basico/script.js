@@ -429,3 +429,19 @@ string / caracter
 // var mes = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
 // console.log(mes[d.getDay()])
 // console.log(d)
+
+// Const, Let e Var
+
+ // var a = 1  variável global, podendo ser acessada de qualquer lugar
+ // let b = 2  variável de escopo, pode ser acessado somente no escopo criado, pode ser reatribuida, pode receber outros valores
+ // const c = 3  variável de escopo, pode ser acessado somente no escopo criado, não pode ser reatribuida
+
+// {
+//     var a = 1
+//     let b = 2
+//     const c = 3
+// }
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
