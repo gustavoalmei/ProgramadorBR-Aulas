@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js"></script>
+    <style>
+        #id{
+            display: none; /*alterar para visualizar*/
+        }
+
+        #id, .p{
+            color: red;
+        }
+        span{
+            display: none;
+        }
+    </style>
+
+    <script>
+        function hidenH1(){
+            let h1 = document.getElementById("h1")
+            h1.style.display = "none";
+        }
+
+        function esconderH1(i){
+            let h2 = document.getElementById("h2")
+            h2.innerText = i.value
+        }
+
+        function escrever(i){
+            let h3 = document.getElementById("h3")
+            h3.innerText = i.value
+        }
+    </script>
+
+
 </head>
 <body>
-    
+    <div id="id">
+        <h1>Titulo</h1>
+        <p class="p1" id="p1">Parágrafo 1</p>
+        <p meuAtt="Gustavo" class="p2">Parágrafo 2 <span>outro texto</span></p>
+        <p class="p3">Parágrafo 3</p>
+        <p>Parágrafo 4</p>
+    </div>
+
+    <div id="dom">
+        <h1 id="h1">onclick</h1>
+        <p onclick="hidenH1()" style="width: 80px;padding:20px; background-color: red; display: block;">Hidden H1</p>
+
+        <h1 id="h2">onchange</h1>
+        <input id="i" onchange="esconderH1(this)" type="text">
+
+        <h1 id="h3">oninput</h1>
+        <input oninput="escrever(this)" type="text">
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
