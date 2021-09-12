@@ -33,11 +33,45 @@
             let h3 = document.getElementById("h3")
             h3.innerText = i.value
         }
+
+        function onOver(a){
+            this.a = document.getElementsByTagName("p")
+            a.style.backgroundColor = "red"
+            a.style.display = "inline-block"
+        }
+        
+        function onOverOut(a){
+            this.a = document.getElementsByTagName("p")
+            a.style.backgroundColor = "white"
+            a.style.display = "inline-block"
+        }
+
+        function mudarTitle(){
+            var a = document.getElementsByTagName("title")[0]
+            a.innerHTML = "Ticaricatica"
+        }
+        function padrao(){
+            var a = document.getElementsByTagName("title")[0]
+            a.innerHTML = "Document"
+        }
+
+        function loaded(){
+            let t = document.getElementById("titulo")
+            t.addEventListener("mouseover", alterarText)
+            t.addEventListener("mouseout", mouseout)
+        }
+
+        function alterarText(){
+            this.innerHTML = "Outro texto"
+        }
+
+        function mouseout(){
+            this.innerHTML = "Novo texto" 
+        }
+        
     </script>
-
-
 </head>
-<body>
+<body onload="loaded()">
     <div id="id">
         <h1>Titulo</h1>
         <p class="p1" id="p1">Parágrafo 1</p>
@@ -57,6 +91,16 @@
         <input oninput="escrever(this)" type="text">
     </div>
 
-    <script src="./script.js"></script>
+    <div>
+        <p onmouseover="onOver(this)" onmouseout="onOverOut(this)" style="font-size:30px; color: blue;">Passe o mouse aqui!</p>
+
+        <p onmouseover="mudarTitle()" onmouseout="padrao()"  style="font-size:30px; color: black;font-weight:bold;">Alterar title(passar o mouse)</p>
+    </div>
+
+    <div>
+        <h1 id="titulo" >Cliquei Aqui!</h1>
+    </div>
+
+
 </body>
 </html>

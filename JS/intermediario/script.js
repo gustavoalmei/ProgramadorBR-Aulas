@@ -32,3 +32,6 @@
 // p1.style.backgroundColor = "black" pode ser alterado o style da propriedade
 
 //Eventos - (DOM Events)
+// Os parênteses nas funções
+// - Em HTML deve se utilizar os ( ) para identificar que é uma função.
+// - Em JS , quando quero executar a função eu coloco os ( ), mas quando eu quero apenas chamar a função ou atribuir ela a uma variável, eu coloco sem os ( ).
