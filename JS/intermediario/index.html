@@ -19,6 +19,7 @@
     </style>
 
     <script>
+        // Evento DOM
         function hidenH1(){
             let h1 = document.getElementById("h1")
             h1.style.display = "none";
@@ -68,10 +69,29 @@
         function mouseout(){
             this.innerHTML = "Novo texto" 
         }
-        
+        // Comparando as maneiras de criar um evento
+        function f(e){
+            console.log("teste")
+            console.log(this)
+            console.log(e)
+        }
+
+        function f1(e){
+            console.log("teste f1")
+            console.log(this)
+            console.log(e) // será o evento
+            console.log(e.target) // será o elemento que está sofrendo o evento
+        }
+
+        window.onload = function(){
+            let h1 = document.getElementById("evento")
+            h1.addEventListener("click", f1);
+        }
+
     </script>
 </head>
-<body onload="loaded()">
+<body >
+    <!-- onload="loaded()" -->
     <div id="id">
         <h1>Titulo</h1>
         <p class="p1" id="p1">Parágrafo 1</p>
@@ -98,9 +118,12 @@
     </div>
 
     <div>
-        <h1 id="titulo" >Cliquei Aqui!</h1>
+        <h1 id="titulo">Cliquei Aqui!</h1>
     </div>
 
+    <div>
+        <h1 onclick="f(this)" id="evento">Title</h1>
+    </div>
 
 </body>
 </html>
