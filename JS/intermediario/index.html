@@ -5,125 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #id{
-            display: none; /*alterar para visualizar*/
-        }
-
-        #id, .p{
-            color: red;
-        }
-        span{
-            display: none;
-        }
-    </style>
-
     <script>
-        // Evento DOM
-        function hidenH1(){
-            let h1 = document.getElementById("h1")
-            h1.style.display = "none";
-        }
-
-        function esconderH1(i){
-            let h2 = document.getElementById("h2")
-            h2.innerText = i.value
-        }
-
-        function escrever(i){
-            let h3 = document.getElementById("h3")
-            h3.innerText = i.value
-        }
-
-        function onOver(a){
-            this.a = document.getElementsByTagName("p")
-            a.style.backgroundColor = "red"
-            a.style.display = "inline-block"
+        let a = {
+            nome: "Gustavo",
+            idade: 21
         }
         
-        function onOverOut(a){
-            this.a = document.getElementsByTagName("p")
-            a.style.backgroundColor = "white"
-            a.style.display = "inline-block"
-        }
+        let b = JSON.stringify(a) // pega o Obj JSON e transforma em string
 
-        function mudarTitle(){
-            var a = document.getElementsByTagName("title")[0]
-            a.innerHTML = "Ticaricatica"
-        }
-        function padrao(){
-            var a = document.getElementsByTagName("title")[0]
-            a.innerHTML = "Document"
-        }
+        let a2 = '{"nome": "Gustavo","idade": 21} '
 
-        function loaded(){
-            let t = document.getElementById("titulo")
-            t.addEventListener("mouseover", alterarText)
-            t.addEventListener("mouseout", mouseout)
-        }
+        let b2 = JSON.parse(a2) // pega a string e transforma em Obj JSON
 
-        function alterarText(){
-            this.innerHTML = "Outro texto"
-        }
-
-        function mouseout(){
-            this.innerHTML = "Novo texto" 
-        }
-        // Comparando as maneiras de criar um evento
-        function f(e){
-            console.log("teste")
-            console.log(this)
-            console.log(e)
-        }
-
-        function f1(e){
-            console.log("teste f1")
-            console.log(this)
-            console.log(e) // será o evento
-            console.log(e.target) // será o elemento que está sofrendo o evento
-        }
-
-        window.onload = function(){
-            let h1 = document.getElementById("evento")
-            h1.addEventListener("click", f1);
-        }
-
+        console.log(a)
+        console.log(b)
+        console.log(a2)
+        console.log(b2)
     </script>
 </head>
-<body >
-    <!-- onload="loaded()" -->
-    <div id="id">
-        <h1>Titulo</h1>
-        <p class="p1" id="p1">Parágrafo 1</p>
-        <p meuAtt="Gustavo" class="p2">Parágrafo 2 <span>outro texto</span></p>
-        <p class="p3">Parágrafo 3</p>
-        <p>Parágrafo 4</p>
-    </div>
-
-    <div id="dom">
-        <h1 id="h1">onclick</h1>
-        <p onclick="hidenH1()" style="width: 80px;padding:20px; background-color: red; display: block;">Hidden H1</p>
-
-        <h1 id="h2">onchange</h1>
-        <input id="i" onchange="esconderH1(this)" type="text">
-
-        <h1 id="h3">oninput</h1>
-        <input oninput="escrever(this)" type="text">
-    </div>
-
-    <div>
-        <p onmouseover="onOver(this)" onmouseout="onOverOut(this)" style="font-size:30px; color: blue;">Passe o mouse aqui!</p>
-
-        <p onmouseover="mudarTitle()" onmouseout="padrao()"  style="font-size:30px; color: black;font-weight:bold;">Alterar title(passar o mouse)</p>
-    </div>
-
-    <div>
-        <h1 id="titulo">Cliquei Aqui!</h1>
-    </div>
-
-    <div>
-        <h1 onclick="f(this)" id="evento">Title</h1>
-    </div>
+<body>
 
 </body>
 </html>
