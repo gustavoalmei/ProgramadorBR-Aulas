@@ -125,8 +125,13 @@ function mouseout(){
 /* 
 <div>
     <div>
-    <h1 onclick="f(this)" id="evento">Title</h1>
+    <h1 onclick="f(this)" id="evento">Title</h1> // evento criado no HTML
 </div>
+// window.onload = function(){
+//     let h1 = document.getElementById("evento")
+//     h1.addEventListener("click", f1); //         evento criado no JS
+// }
+
 // function f(e){
 //     console.log("teste")
 //     console.log(this) // this sera o window (sem o parametro)
@@ -139,11 +144,6 @@ function mouseout(){
 //     console.log(e) // será o evento
 //     console.log(e.target) // será o elemento que está sofrendo o evento
 // }*/
-
-// window.onload = function(){
-//     let h1 = document.getElementById("evento")
-//     h1.addEventListener("click", f1);
-// }
 
 // Elementos pai e filhos
 // let h1 = document.getElementById("d1")
@@ -183,3 +183,111 @@ function mouseout(){
 // Math.ceil(5.5) ira arredondar o valor para o valor acima
 // Math.floor(5.99) ira arredondar o valor para o valor abaixo
 // Math.round(Math.random() * 15)  - ira gerar um valor aleatório(Math.random()), e o valor sera arredondado(Math.round())
+
+// JSON
+// let a = {
+//     nome: "Gustavo",
+//     idade: 21
+// }
+
+// let b = JSON.stringify(a) // pega o Obj JSON e transforma em string
+
+// let a2 = '{"nome": "Gustavo","idade": 21} '
+
+// let b2 = JSON.parse(a2) // pega a string e transforma em Obj JSON
+
+// console.log(a)
+// console.log(b)
+// console.log(a2)
+// console.log(b2)
+
+// Timer e Intervalo
+
+// Timer 
+// o timer será executado sómente uma vez.
+
+// <script>
+// let timer;
+// let number = 0;
+// function mudarTexto(){
+//     let h = document.getElementsByTagName('h1')[0]
+
+//     h.innerText += ` ${number}` 
+//     number++
+// }
+// function iniciar(){
+//    timer = setTimeout(mudarTexto, 3000)
+// }
+// function parar(){
+//     clearTimeout(timer)  está função ira parar o timer
+// }
+// </script>
+// <h1>Titulo</h1>
+// <input onclick="iniciar()" type="submit" value="Inciar"></input>
+// <input onclick="parar()" type="submit" value="Parar"></input>
+
+// Intervalo 
+
+// o intervalo será executado em um intervalo de tempo, no exemplo abaixo, ele será executado acada 3s
+
+// <script>
+// let intervalo;
+// let number = 0;
+// function mudarTexto(){
+//     let h = document.getElementsByTagName('h1')[0]
+
+//     h.innerText += ` ${number}` 
+//     number++
+// }
+// function iniciar(){
+//     intervalo = setInterval(mudarTexto, 3000)
+// }
+// function parar(){
+//     clearTimeout(intervalo) está função ira parar o intervalo
+// }
+// </script>
+// <h1>Titulo</h1>
+// <input onclick="iniciar()" type="submit" value="Inciar"></input>
+// <input onclick="parar()" type="submit" value="Parar"></input>
+
+// Pegando atributo personalizado HTML
+
+// setAttribute = criando um novo atributo
+// getAttribute = pegando o atributo
+
+// HTML
+// <ul id="lista" num="10">
+// </ul>
+
+// JS
+// let lista = document.getElementById("lista")
+// let num = parseInt(lista.getAttribute("num"))
+// let conteudo = ""
+
+// for(let i = 0; i < num; i++){
+//     conteudo += `<li>${i}</li>`
+// }
+// lista.innerHTML = conteudo
+
+// Melhorando o atributo personalizado 
+
+// HTML
+//  <ul id="lista" data-numb="15" data-id=32>
+
+//  </ul>
+
+// JS
+// let lista = document.getElementById("lista")
+
+// lista.dataset.n = "5"; definindo um valor fixo
+
+// let id = lista.dataset.id; seria a mesma coisa que um obj, colocar data-(valor) é uma boa prática
+// console.log(id) 
+
+// let num = parseInt(lista.dataset.n); convertendo a string para number.
+
+// let conteudo = ""
+// for(let i = 0; i < num; i++){
+//     conteudo += `<li>${i}</li>`
+// }
+// lista.innerHTML = conteudo
