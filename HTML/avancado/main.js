@@ -93,34 +93,7 @@
 // </div>
 // </div>
 
-let inputInstagram = document.querySelector('#inputInstagram')
-let inputTwitter = document.querySelector('#inputTwitter')
-let socialMedia = document.querySelector('.socialMedia')
-let social = document.querySelector('.social')
-
-const User = {
-  instagram: "",
-  twitter:""
-}
-
-// User.instagram = inputInstagram.value
-// User.twitter = inputTwitter.value
-// `https://www.${social}.com/${User[social]}`
-
-function ChangeName(){
-  
-  for (let link of social.children) {
-    let social = link.getAttribute("id")
-    
-    link.textContent = social
-    
-  }
-
-  for(let info of socialMedia.children){
-    let social = info.getAttribute("class")
-    
-    
-    
-  }
-}
-
+// Iframe 
+// <h1>Esta é a página 2</h1>
+// <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" width="640" height="360" />/ allow="autoplay;"></iframe>
+// <!-- é a forma de colocar o conteudo de outra pagina -->
