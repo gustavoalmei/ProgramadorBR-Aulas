@@ -98,4 +98,51 @@
 // <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" width="640" height="360" />/ allow="autoplay;"></iframe>
 // <!-- é a forma de colocar o conteudo de outra pagina -->
 
-// Audio
+// Animação com HTML
+// JS
+/*
+ let quadradoPequeno = document.querySelector(".quadradoPequeno")
+
+ let xInicial = 0;
+ let yInicial = 0;
+
+ function moverQuadrado(x,y){
+   let PosX = x + "px";
+   let PosY = y + "px";
+
+   quadradoPequeno.style.top = PosY
+   quadradoPequeno.style.left = PosX
+ }
+
+ setInterval(()=>{
+   moverQuadrado(xInicial++, yInicial++)
+ }, 24)
+*/
+
+// html 
+
+/* <div class="quadradoGrande">
+  <div class="quadradoPequeno">
+  </div>
+</div> */
+
+// Css
+
+/* 
+.quadradoGrande{
+   width: 500px;
+   height: 500px;
+   position: relative;
+   overflow: hidden;
+   background-color: blue;
+ }
+
+ .quadradoPequeno{
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   background-color: brown;
+ }
+ */
