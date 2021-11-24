@@ -146,3 +146,53 @@
    background-color: brown;
  }
  */
+
+// Canvas - Linhas
+// pode ser usado no código html (para coisas pequenas)
+
+// HTML
+/* 
+  <canvas id="tela" width="500px" height="500px"></canvas>
+*/
+
+// JS
+// let contexto = document.querySelector("#tela")
+// let ctx = contexto.getContext("2d")
+
+
+// ctx.moveTo(0,0) // largura, altura
+// ctx.lineTo(100,200) // largura, altura
+// ctx.lineTo(200,0) // largura, altura
+// ctx.moveTo(0,0) // largura, altura
+// ctx.lineTo(200, 0) // largura, altura
+// ctx.strokeStyle = "red";
+// ctx.lineWidth = 5; // espessura da linha
+
+// ctx.stroke() // irá fazer o desenho
+
+// caso faça alguma alteração via css no canvas, nas linhas por exemplo, dependendo da modificação, a linha poderá ficar mais pixelada.
+
+// Canvas - Retangulo
+//HTML
+/* 
+  <canvas id="tela" width="500px" height="500px"></canvas> 
+*/
+
+// JS
+/*
+let contexto = document.querySelector("#tela")
+let ctx = contexto.getContext("2d")
+
+ctx.rect(50, 10, 100, 250)
+// ctx.fillRect(50, 10, 100, 250) // eixo X, eixo Y, Largura, altura
+
+ctx.fillStyle = "pink";
+// ctx.strokeRect(50, 10, 100, 250) // Criando a borda
+
+ctx.strokeStyle = "black";
+ctx.lineWidth = 15;
+
+ctx.fill() // vai criar o preenchimento
+ctx.stroke()
+ctx.clearRect(75, 60, 50, 50)  // eixo X, eixo Y, Largura, altura
+*/
