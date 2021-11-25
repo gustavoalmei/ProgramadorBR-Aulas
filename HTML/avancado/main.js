@@ -196,3 +196,62 @@ ctx.fill() // vai criar o preenchimento
 ctx.stroke()
 ctx.clearRect(75, 60, 50, 50)  // eixo X, eixo Y, Largura, altura
 */
+
+// Canvas - Inicio e Fim do caminho (Path)
+
+/*JS
+let contexto = document.querySelector("#tela")
+let ctx = contexto.getContext("2d")
+
+ctx.beginPath() // inicar uma nova linha
+ctx.lineWidth = 5;
+ctx.strokeStyle = "black"
+ctx.moveTo(10,50)
+ctx.lineTo(290,450)
+ctx.stroke()
+
+ctx.beginPath() // inicar uma nova linha, sem essa parte do codígo, a linha iria continuar, e a cor iria sobrescrever 
+ctx.lineWidth = 5;
+ctx.strokeStyle = "red"
+ctx.fillStyle = "green"
+ctx.moveTo(300,50)
+ctx.lineTo(400,450)
+ctx.lineTo(10,50)
+ctx.closePath() // ira fechar a linha
+ctx.fill() // se o fill ficar antes do stroke, a borda ficara por cima do preenchimento, caso contrario, ela ficara por baixo do preenchimento
+ctx.stroke()
+*/
+
+/*HTML
+  <canvas id="tela" width="500px" height="500px"></canvas>
+*/
+
+// Canvas - Circles
+
+/*
+JS
+let contexto = document.querySelector("#tela")
+let ctx = contexto.getContext("2d")
+
+let x = 250
+let y = 250
+let raio = 100
+
+let inicio = 0
+let fim = 2 * Math.PI // é medido em radianos, 2 pi radianos é um circulo inteiro
+
+ctx.beginPath()
+ctx.lineWidth = 2;
+ctx.strokeStyle = "red"
+ctx.fillStyle = "blue"
+ctx.arc(x, y, raio, inicio, fim)
+
+ctx.closePath()
+ctx.fill()
+ctx.stroke()
+*/
+
+/*
+HTML
+  <canvas id="tela" width="500px" height="500px"></canvas>
+*/
