@@ -93,7 +93,7 @@
 // </div>
 // </div>
 
-// Iframe 
+// Iframe
 // <h1>Esta é a página 2</h1>
 // <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" width="640" height="360" />/ allow="autoplay;"></iframe>
 // <!-- é a forma de colocar o conteudo de outra pagina -->
@@ -119,7 +119,7 @@
  }, 24)
 */
 
-// html 
+// html
 
 /* <div class="quadradoGrande">
   <div class="quadradoPequeno">
@@ -158,7 +158,6 @@
 // JS
 // let contexto = document.querySelector("#tela")
 // let ctx = contexto.getContext("2d")
-
 
 // ctx.moveTo(0,0) // largura, altura
 // ctx.lineTo(100,200) // largura, altura
@@ -244,7 +243,7 @@ ctx.beginPath()
 ctx.lineWidth = 2;
 ctx.strokeStyle = "red"
 ctx.fillStyle = "blue"
-ctx.arc(x, y, raio, inicio, fim)
+ctx.arc(x, y, raio, inicio, fim) // cria o circulo
 
 ctx.closePath()
 ctx.fill()
@@ -255,3 +254,75 @@ ctx.stroke()
 HTML
   <canvas id="tela" width="500px" height="500px"></canvas>
 */
+
+// Canvas - Animação
+
+// JS
+/*
+contexto = document.querySelector('#tela')
+ctx = contexto.getContext('2d')
+const circle = {
+  x: 250,
+  y: 250,
+  raio: 100,
+  inicio: 0,
+  fim: 0,
+  antiHorario: false // true ira fazer desenhar do sentido horario(apagar o desenho), false no sentido anti horario(formar o desenho)
+}
+
+// funcao para desenhar
+function drawCircule(circle) {
+  ctx.beginPath()
+  ctx.rect(0, 0, 500, 500)
+  ctx.fillStyle = 'blueviolet'
+  ctx.fill()
+
+  ctx.beginPath()
+  ctx.lineWidth = 2
+  ctx.strokeStyle = 'red'
+  ctx.fillStyle = 'blue'
+  ctx.arc(circle.x, circle.y, circle.raio, circle.inicio, circle.fim, circle.antiHorario)
+  ctx.closePath()
+  ctx.fill()
+  ctx.stroke()
+}
+
+setInterval(function (){
+
+  if(circle.fim < 2 * Math.PI){
+    circle.fim += 0.05;
+    circle.x += 0.5
+    circle.y -= 0.5
+    circle.raio += 0.5
+  }
+
+  drawCircule(circle)
+}, 10)
+*/
+
+// Canvas - Imagens
+// JS
+/*
+ let contexto = document.querySelector('#tela')
+ let ctx = contexto.getContext('2d')
+ inserindo imagem no HTML
+
+ let mario = document.querySelector('#mario')
+ ctx.drawImage(mario, 10, 10, 500, 200)
+
+ inserindo imagem no JS
+ let img  = new Image()
+ img.src = "/images/mario.png"
+
+ img.onload = desenharImagem;
+
+ function desenharImagem(){
+   ctx.drawImage(this, 10, 10, 500, 200)
+ }
+ */
+
+ // HTML
+ /*
+   <!-- <img id="mario" src="/images/mario.png" style="display: none;"> -->
+  <canvas id="tela" width="500px" height="500px"></canvas>
+  */
