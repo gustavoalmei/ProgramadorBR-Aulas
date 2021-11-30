@@ -1,0 +1,68 @@
+/*
+Pseudo Elementos
+
+p::first-letter {
+  estilo para a primeira letra*
+  font-size: 5rem;
+  color: red;
+}
+
+p::first-line {
+  estilo para a primeira linha
+  color: blue;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  cuidara do conteudo que vira antes do li, a mesma coisa para o after, porém, ele cuidara do conteudo depois do li
+  content: '';
+  display: inline-block;
+  background-color: white;
+  background-position: center;
+  background-image: url(/images/stars.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+p::selection {
+  background-color: orange;
+  color: white;
+}
+*/
+
+/*
+Seletores
+div p{
+  vai pegar todos os paragrafos do div 
+  background-color: red;
+}
+div>p{
+  vai pegar todos os paragrafos cujo o pai é o div 
+  background-color: red;
+}
+div+p{
+  vai pegar o elemento que está logo em seguida a div
+  background-color: red;
+}
+div~p{
+  vai pegar todos os elemento que estão após a div
+  background-color: red;
+}
+[width="500"]{ 
+  todo o elemento que tiver o atributo width="500"/ width, vai ser selecionado
+  background-color: red;
+}
+[title~="titulo"]{ 
+  o elemento que tiver a palavra titulo recebera o estilo 
+  background-color: red;
+}
+[title*="tu"]{ 
+  todo o elemento que tiver a palavra titulo recebera o estilo 
+  background-color: red;
+}
+*/
