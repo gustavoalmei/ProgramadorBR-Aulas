@@ -66,3 +66,97 @@ div~p{
   background-color: red;
 }
 */
+
+/* Pseudo Classes - estilo de seletores
+Pseudo elemento tera apenas ":", enquanto a pseudo class tera "::"
+
+input:focus{ apos focado, mura a cor do texto
+  color: red;
+}
+
+li:first-child{ mudara a cor do primeiro filho, caso tenha outro elemento a cima, não terá efeito
+  color: red;
+}
+
+li:first-of-type{ murada a cor, independente do elemento que tive anteriormente
+  color: red;
+}
+
+li:nth-of-type(1){ pegara o filho na posição informada, independente se tiver elemento antes
+  color: red;
+}
+
+li:nth-child(2){ pegara o filho na ordem que está, podendo mudar caso tenha outros filhos
+  color: red;
+}
+
+li:nth-last-child(2){ pegara o ultimo elemento
+  color: red;
+}
+
+li:last-child{ pegara o ultimo elemento
+  color: red;
+}
+
+li:last-of-type{ pegara o ultimo elemento mesmo tento outro filho
+  color: red;
+}
+
+li:nth-child(even){ pegar os filhos impares, odd para par
+  color: red;
+}
+ul{
+  padding: 0;
+  margin:0;
+  width: 10rem;
+}
+
+li{
+  list-style: none;
+  border: 1px solid black;
+}
+
+li:nth-child(even){
+  color: grey;
+  background-color: white;
+}
+
+li:nth-child(odd){
+  color: white;
+  background-color: rgba(49, 49, 49, 0.2);
+}
+*/
+
+/*
+ Função Calc CSS
+
+ body{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+ }
+
+ .container{
+   width: 100%;
+   background-color: blue;
+ }
+
+ .primeira{
+   display: inline-block;
+   margin-right: -4px;
+   margin-bottom: -4px;
+   width: calc(100% - 500px);;
+   height: 500px;
+   background-color: yellow;
+ }
+
+ .segunda{
+  display: inline-block;
+  margin-right: -4px;
+  margin-bottom: -4px;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+ */
+
