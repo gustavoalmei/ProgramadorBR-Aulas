@@ -160,3 +160,21 @@ li:nth-child(odd){
 }
  */
 
+/*
+Transformações
+img{
+  width: 500px;
+  transform: skew(-45deg); efeito 2d
+}
+
+img{
+  width: 500px;
+  transform: scale(1.5,2); zoom vertical e horizontal
+}
+img{
+  width: 500px;
+  transform: rotate(20deg); rotacionar
+}
+
+*/
+
