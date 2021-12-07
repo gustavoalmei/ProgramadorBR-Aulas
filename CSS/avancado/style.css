@@ -178,3 +178,164 @@ img{
 
 */
 
+/*
+Variáveis em CSS
+
+:root{      representa o elemento <html>
+  --text-p1: red;
+  --text-p2: green;
+  --text-h:blue;
+
+  --size-HW: 500px;
+  --bck-div1:purple;
+  --bck-div2:rgb(17, 5, 68);
+}
+
+.p1{
+  color: var(--text-p1);
+}
+
+.p2{
+  color: var(--text-p2);
+}
+
+.h{
+  color: var(--text-h);
+}
+
+.sqr1{
+  width: var(--size-HW);
+  height: var(--size-HW);
+  background-color: var(--bck-div1);
+}
+
+.sqr2{
+  width: var(--size-HW);
+  height: var(--size-HW);
+  background-color: var(--bck-div2);
+}
+*/
+
+/*
+FlexBox - Flex Direction
+
+.container{
+  display: flex;
+  flex-direction: column; ira cuidar da direção da coluna ou linha; row / column
+
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
+/*
+Flexbox - Wrap
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; wrap seria um quebra linha
+
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
+/*
+Flex flow
+
+.container{
+  display: flex;
+  flex-flow: row wrap; uma maneira de economizar linha
+
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
+/*
+Flexbox - Justify Content + Align Items
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; cuida do eixo horizontal
+  align-items: center; cuida do eixo vertical
+
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
