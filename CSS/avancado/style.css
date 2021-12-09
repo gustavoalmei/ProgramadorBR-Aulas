@@ -339,3 +339,128 @@ Flexbox - Justify Content + Align Items
 }
 */
 
+/*
+Flexbox - Align Content
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; vai alinhar o item em relação as linhas
+  align-content: center; /*vai alinhar as linhas em relação ao container
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
+/*
+Flexbox - Grow/Shrink
+
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+   flex-shrink: 0 o elemento não irá aumentar nem diminuir. o padrão é 1. pode também multiplicar o tamanho ex: flex-shrink: 2; 2x o tamanho. 
+  flex-grow: 1; o elemento se tornara mais responsivo, podendo aumentar e dminiuir. o padrão é 0
+}
+
+.r2{
+  background-color: green;
+  flex-grow: 1;
+}
+
+.r3{
+  background-color: blue;
+  flex-grow: 0;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
+/*
+Flexbox - Ordem OBS: SÓ PODE SER USADA COM O display:flex - o padrão é todos filhos terem a ordem 0
+
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+  order: 3;
+  order: -1;*caso queira deixar em primeiro somente um elemento, colocar -1
+}
+
+.r2{
+  background-color: green;
+  order: 1;
+}
+
+.r3{
+  background-color: blue;
+  order: 2;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
+
+/*
+Flexbox - Align Self
+
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 800px;
+  background-color: grey;
+  color: white;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+  align-self: center; ira mudar a posição de apenas um elemento
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+  width: 200px;
+  height: 200px;
+}
+*/
