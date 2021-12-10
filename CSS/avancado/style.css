@@ -464,3 +464,201 @@ Flexbox - Align Self
   height: 200px;
 }
 */
+
+/*
+Grid Template
+
+.container{
+  color: white;
+  display: grid;
+  background-color: grey;
+
+  grid-template-rows: 150px 150px 150px; ira definir quantas linhas tera, e o tamanho delas
+
+  grid-template-columns: 150px 150px 150px; ira definir quantas colunas tera, e o tamanho delas
+
+  grid-template: 150px 150px/150px 150px 150px ;  linha / coluna 
+
+  fr quer dizer fração, ex: 1fr 2fr 1fr, o valor do meio sera 2x os valores das pontas
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+
+}
+
+.r3{
+  background-color: blue;
+}
+
+
+.rect{
+  margin:5px;
+}
+*/
+
+/* 
+Grid Gap
+
+.container{
+  color: white;
+  display: grid;
+  background-color: grey;
+
+  gap: 10px; ira dar um espaçamento entre os elementos / pode ser usado no flexbox também
+  grid-row-gap: 10px; ira dar um espaçamento nas linhas dos elementos 
+  grid-column-gap: 10px; ira dar um espacamento nas colunas dos elementos 
+  grid-template-rows: 150px 150px 150px;
+
+  grid-template-columns: 150px 150px 150px;
+
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+
+}
+
+.r3{
+  background-color: blue;
+}
+
+
+.rect{
+
+}
+*/
+
+/*
+Grid Justify e Align Items - ira posicionar os elementos em relação a cada espaço da grid
+
+.container{
+  color: white;
+  display: grid;
+  background-color: grey;
+
+  grid-template: auto auto / auto auto auto;
+
+  justify-items: center; ira posicionar na horizontal
+  align-items: center; ira posicionar na vertical
+
+  gap: 10px;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+
+}
+
+.r3{
+  background-color: blue;
+}
+
+
+.rect{
+  width: 400px;
+  height: 150px;
+}
+*/
+
+/*
+Grid Justify e Align Content - ira posicionar os elementos em relação ao container
+
+.container{
+  height: 900px;
+  color: white;
+  display: grid;
+  background-color: grey;
+
+  grid-template: auto auto / auto auto auto;
+
+  justify-content: center;
+  align-content: center;
+
+  gap: 10px;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+
+}
+
+.r3{
+  background-color: blue;
+}
+
+
+.rect{
+  width: 400px;
+  height: 150px;
+}
+*/
+
+/*
+Grid Template Area
+
+*/
+.container{
+  height: 900px;
+  color: white;
+
+  background-color: grey;
+
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
+
+}
+
+.r3{
+  background-color: blue;
+}
+
+.rect{
+
+}
+
+.item1{
+
+}
+
+.item2{
+
+}
+
+.item3{
+
+}
+
+.item4{
+
+}
+
+.item5{
+
+}
+
+.item6{
+
+}
