@@ -612,14 +612,16 @@ Grid Justify e Align Content - ira posicionar os elementos em relação ao conta
 
 /*
 Grid Template Area
-
-*/
 .container{
-  height: 900px;
+  padding: 10px;
   color: white;
-
+  display: grid;
   background-color: grey;
 
+  grid-template-areas: "a2 a2 a2 a2 a2 a2"
+                       "a1 a1 a1 a3 a3 a3"
+                       "a1 a1 a1 a4 a5 a5"
+                       "a6 a6 a6 a6 a6 a6";
 }
 
 .r1{
@@ -635,30 +637,87 @@ Grid Template Area
   background-color: blue;
 }
 
-.rect{
-
-}
-
 .item1{
-
+  grid-area: a1; aqui é como se fosse um apelido para a area
 }
-
+  
 .item2{
-
+  grid-area: a2;
 }
 
 .item3{
-
+  grid-area: a3;
 }
 
 .item4{
-
+  grid-area: a4;
 }
 
 .item5{
-
+  grid-area: a5;
+  height: 500px;
+  border: 1px solid black;
 }
 
 .item6{
+  grid-area: a6;
+}
+*/
+
+/*
+Grid Column e Row Start e End
+
+.container{
+  padding: 10px;
+  color: white;
+  display: grid;
+  background-color: grey;
+  grid-template: auto auto auto auto/ auto auto auto auto auto auto;
+}
+
+.r1{
+  background-color: red;
+}
+
+.r2{
+  background-color: green;
 
 }
+
+.r3{
+  background-color: blue;
+}
+
+.item1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+  
+.item2{
+  grid-row-start: 1; ira iniciar na primeira linha
+  grid-column-start: 1; ira iniciar na coluna 1
+  grid-column-end: 7; ira terminar na coluna 7
+}
+
+.item3{
+  grid-column-start: span 4;  ira preencher 4 colunas(3 linhas já foram preenchidas, as 4 colunas restantes seram preenchidas agora)
+  grid-row-start: 2;
+}
+
+.item4{
+  grid-row-start: 3;
+  grid-column-start: span 3;
+}
+
+.item5{
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+.item6{
+  grid-row-start: 4;
+  grid-column-start: span 6;
+}
+*/
